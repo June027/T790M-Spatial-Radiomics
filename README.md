@@ -14,21 +14,13 @@ Patient images, masks, clinical tables, trained models, and derived patient-leve
 
 ## Method
 
-```mermaid
-flowchart LR
-    A[T1W and T2FS MRI] --> B[Expert lesion ROI]
-    B --> C[9x9 local entropy]
-    C --> D[ROI-wise Z-score: intensity + entropy]
-    D --> E[30 patient-level superpixels]
-    E --> F[Population clustering; candidate K = 2..10]
-    F --> G[Spatial subregion maps]
-    G --> H[PyRadiomics: subregions + whole tumor]
-    H --> I[ComBat harmonization]
-    I --> J[ICC > 0.80]
-    J --> K[Mann-Whitney U + L1 logistic selection]
-    K --> L[Logistic radiomics signature]
-    L --> M[ROC / PR-AUC / calibration / SHAP]
-```
+<p align="center">
+  <img src="assets/spatial-subregion-construction.png" alt="Published examples of lesion ROI, local entropy, patient-level clustering, and population-level spatial subregions in T1W and T2FS MRI" width="100%">
+</p>
+
+<p align="center"><sub>Published examples of ROI local entropy and population-level spatial subregions from Zhou et al. (2025).</sub></p>
+
+The implementation follows the published sequence: expert lesion ROI, 9×9 local entropy, ROI-wise intensity and entropy normalization, 30 patient-level superpixels, population-level subregion clustering, PyRadiomics extraction, ComBat harmonization, ICC filtering, Mann-Whitney U screening, L1 logistic selection, and model evaluation with ROC, calibration, and SHAP.
 
 The publication reported 1,967 radiomics features across first-order, shape, texture, and filtered-image families. The exact number emitted by code can vary with PyRadiomics version and valid ROI dimensionality.
 
@@ -138,6 +130,12 @@ Feature filtering and L1 logistic hyperparameter selection are fitted independen
 ## Published results
 
 In the published cohorts, the T1W+T2FS regional fusion model achieved AUCs of **0.916** in training, **0.867** in internal validation, and **0.839** in external validation. These values describe the paper cohorts and should not be treated as results of a fresh clone without the original data and protocol.
+
+<p align="center">
+  <img src="assets/published-roc-curves.png" alt="Published ROC curves for training, internal validation, and external validation cohorts" width="100%">
+</p>
+
+<p align="center"><sub>ROC curves reported in the published study. See the linked article for cohort definitions and confidence intervals.</sub></p>
 
 ## Scope
 

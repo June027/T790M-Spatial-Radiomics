@@ -19,6 +19,9 @@ checkpoints/
 *.tiff
 *.png
 !examples/*.csv
+!assets/
+!assets/spatial-subregion-construction.png
+!assets/published-roc-curves.png
 __pycache__/
 *.py[cod]
 .pytest_cache/
