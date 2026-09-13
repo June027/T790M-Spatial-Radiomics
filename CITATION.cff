@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this workflow, please cite the published study."
+title: "T790M-Spatial-Radiomics"
+type: software
+authors:
+  - family-names: Jin
+    given-names: Lijun
+repository-code: "https://github.com/June027/T790M-Spatial-Radiomics"
+preferred-citation:
+  type: article
+  title: "MRI-based radiomics for noninvasive prediction of T790M resistance mutation in lung cancer spinal metastases: an exploratory study"
+  authors:
+    - family-names: Zhou
+      given-names: Xiaoya
+    - family-names: Zheng
+      given-names: Jiashi
+    - family-names: Ai
+      given-names: Hua
+    - family-names: Yang
+      given-names: Chunna
+    - family-names: Wang
+      given-names: Jiahui
+    - family-names: Sun
+      given-names: Yiyao
+    - family-names: Jin
+      given-names: Lijun
+  journal: "Frontiers in Cell and Developmental Biology"
+  volume: 13
+  year: 2025
+  doi: "10.3389/fcell.2025.1673498"

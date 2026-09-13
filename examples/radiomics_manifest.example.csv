@@ -1,0 +1,5 @@
+case_id,sequence,image,subregion_mask,batch,label
+demo_001,T1W,data/T1W/demo_001.nrrd,outputs/partition/T1W/demo_001_subregions.nrrd,scanner_a,0
+demo_001,T2FS,data/T2FS/demo_001.nrrd,outputs/partition/T2FS/demo_001_subregions.nrrd,scanner_a,0
+demo_002,T1W,data/T1W/demo_002.nrrd,outputs/partition/T1W/demo_002_subregions.nrrd,scanner_b,1
+demo_002,T2FS,data/T2FS/demo_002.nrrd,outputs/partition/T2FS/demo_002_subregions.nrrd,scanner_b,1

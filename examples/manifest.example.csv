@@ -1,0 +1,5 @@
+case_id,sequence,image,mask,batch,label
+demo_001,T1W,data/T1W/demo_001.nrrd,data/masks/demo_001.nii.gz,scanner_a,0
+demo_001,T2FS,data/T2FS/demo_001.nrrd,data/masks/demo_001.nii.gz,scanner_a,0
+demo_002,T1W,data/T1W/demo_002.nrrd,data/masks/demo_002.nii.gz,scanner_b,1
+demo_002,T2FS,data/T2FS/demo_002.nrrd,data/masks/demo_002.nii.gz,scanner_b,1

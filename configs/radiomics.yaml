@@ -1,0 +1,31 @@
+imageType:
+  Original: {}
+  Wavelet: {}
+  Square: {}
+  SquareRoot: {}
+  LBP2D: {}
+  LoG:
+    sigma: [1.0, 3.0, 5.0]
+  Logarithm: {}
+  Exponential: {}
+  Gradient: {}
+
+featureClass:
+  firstorder: []
+  shape: []
+  shape2D: []
+  glcm: []
+  glrlm: []
+  glszm: []
+  gldm: []
+  ngtdm: []
+
+setting:
+  binWidth: 25
+  normalize: true
+  normalizeScale: 100
+  geometryTolerance: 10000000
+  minimumROIDimensions: 1
+  correctMask: true
+  force2D: true
+  force2Ddimension: 0
